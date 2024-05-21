@@ -4,6 +4,27 @@
     }
 }
 @media(max-width:1140px){
+    .series_box{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,1fr);
+        max-width: 540px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .collection_box{
+        display: flex;
+        justify-content: center;
+    }
+    .collection_card{
+        max-width: 300px;
+        width: 100%;
+        height: 170px;
+        flex-shrink: 0;
+    }
+    .collection_left,
+    .collection_left{
+        height: 155px; 
+    }
     .film_box{
         max-width: 540px;
         width: 100%;
@@ -16,6 +37,20 @@
     }
 }
 @media(max-width:1000px){
+    .game{
+        height: 400px;
+    }
+    .collection_box{
+        justify-content: flex-start;
+        overflow-x: scroll;
+        gap: 20px;
+    }
+    .collection_card:hover{
+        box-shadow: none;
+    }
+    .collection_play{
+        width: 35px;
+    }
     .intro{
         height: 480px;
     }
@@ -33,6 +68,40 @@
     }
 }
 @media(max-width:900px){
+    .game{
+        height: 350px;
+        gap: 20px;
+    }
+    .game_title{
+        font-size: 35px;
+        line-height: 100%;
+    }
+    .game_text{
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+    .collection_card{
+        width: 260px;
+        height: 160px;
+    }
+    .collection_card:hover .collection_left,
+    .collection_card:hover .collection_right{
+        transform: translate(0);
+    }
+    .collection_left,
+    .collection_right{
+        height: 145px;
+    }
+    .collection_play,
+    .collection_title{
+        transform: translate(0);
+    }
+    .collection_title{
+        font-size: 18px;
+    }
     .widow{
         background: rgba(255, 255, 255, 0.5);
         text-align: center;
@@ -53,6 +122,31 @@
     }
 }
 @media(max-width:800px){
+    .footer_box{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .footer_info{
+        width: 200px;
+        height: 30px;
+        justify-content: center;
+    }
+    .footer_text{
+        font-size: 16px;
+        line-height: 100%;
+    }
+    .series .title{
+        text-align: center;
+    }
+    .game{
+        height: 300px;
+    }
+    .collection{
+        text-align: center;
+    }
+    .collection .title{
+        text-align: center;
+    }
     .widow{
         height: 420px;
     }
@@ -152,6 +246,17 @@
     }
 }
 @media(max-width:600px){
+    .game{
+        height: 250px;
+        gap: 15px;
+    }
+    .game_title{
+        font-size: 30px;
+        line-height: 100%;
+    }
+    .game_text{
+        line-height: 120%;
+    }
     .intro{
         height: 380px;
     }
@@ -179,6 +284,35 @@
     }
 }
 @media(max-width:570px){
+    .footer_box{
+        gap: 10px;
+    }
+    .footer_info img{
+        width: 100px;
+        height: 25px; 
+    }
+    .footer_text{
+        font-size: 15px;
+    }
+    .series_box{
+        display: flex;
+        gap: 15px;
+        margin-top: 15px    ;
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+    .series_card{
+        flex-shrink: 0;
+        width: 200px;
+        gap: 10px;
+        min-height: 170px;
+    }
+    .series_card img{
+        width: 32px;
+    }
+    .series_title{
+        font-size: 20px;
+    }
     .widow{
         margin-top: 15px;
         height: 300px;
@@ -242,7 +376,36 @@
         margin: 15px 0;
     }
 }
+@media(max-width:500px){
+    .game{
+        height: 200px;
+        gap: 10px;
+    }
+    .game .link{
+        width: 120px;
+        height: 35px;
+    }
+    .game_title{
+        font-size: 27px;
+    }
+    .game_text{
+        font-size: 15px;
+    }
+}
 @media(max-width:400px){
+    .game{
+        height: 180px;
+    }
+    .game .link{
+        width: 100px;
+        height: 30px;
+    }
+    .game_title{
+        font-size: 24px;
+    }
+    .game_text{
+        font-size: 14px;
+    }
     .widow{
         margin-top: 15px;
         height: 250px;
